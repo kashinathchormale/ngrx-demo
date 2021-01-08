@@ -1,0 +1,225 @@
+{
+  "list": [
+    {
+      "productName": "Coffee Mug",
+      "price": "330",
+      "quantity": "3",
+      "datepicker": "2021-03-01T18:30:00.000Z",
+      "stock": true,
+      "id": 1,
+      "timestamp": 1583735411378
+    },
+    {
+      "productName": "Car",
+      "price": "3000",
+      "quantity": "1",
+      "datepicker": "2021-03-01T18:30:00.000Z",
+      "stock": "",
+      "id": 3,
+      "timestamp": 1583478271256
+    },
+    {
+      "productName": "Table",
+      "price": "300",
+      "quantity": "2",
+      "datepicker": "2021-03-01T18:30:00.000Z",
+      "stock": false,
+      "id": 4,
+      "timestamp": 1583478223784
+    },
+    {
+      "productName": "Bottle",
+      "price": "700",
+      "quantity": "2",
+      "datepicker": "2021-03-01T18:30:00.000Z",
+      "stock": true,
+      "id": 5,
+      "timestamp": 1583473803969
+    },
+    {
+      "productName": "Telephone",
+      "price": "400",
+      "quantity": "99",
+      "datepicker": "2021-03-01T18:30:00.000Z",
+      "stock": false,
+      "id": 6,
+      "timestamp": 1583473834785
+    },
+    {
+      "productName": "Mobile",
+      "price": "344",
+      "quantity": "33",
+      "datepicker": "2021-03-01T18:30:00.000Z",
+      "stock": false,
+      "id": 7,
+      "timestamp": 1583478235320
+    },
+    {
+      "productName": "Headphone",
+      "price": "500",
+      "quantity": "2",
+      "datepicker": "2020-03-23T18:30:00.000Z",
+      "stock": false,
+      "id": 8,
+      "timestamp": 1583478257336
+    },
+    {
+      "productName": "kash test",
+      "price": "343",
+      "quantity": "22",
+      "datepicker": "2020-03-15T18:30:00.000Z",
+      "stock": false,
+      "id": 9,
+      "timestamp": 1583485085386
+    },
+    {
+      "productName": "Amit",
+      "price": "343",
+      "quantity": "4",
+      "datepicker": "2020-03-15T18:30:00.000Z",
+      "stock": "",
+      "id": 10,
+      "timestamp": 1583417809489,
+      "userId": 1
+    },
+    {
+      "productName": "Sudhir",
+      "price": "1",
+      "quantity": "2",
+      "datepicker": "2020-03-01T18:30:00.000Z",
+      "stock": true,
+      "id": 11,
+      "timestamp": 1583478156400
+    },
+    {
+      "productName": "Ring",
+      "price": "300",
+      "quantity": "2",
+      "datepicker": "2020-02-29T18:30:00.000Z",
+      "stock": true,
+      "id": 12,
+      "timestamp": 1583472549162,
+      "userId": 1
+    },
+    {
+      "productName": "Books",
+      "price": "244",
+      "quantity": "3",
+      "datepicker": "2020-03-01T18:30:00.000Z",
+      "stock": true,
+      "id": 14,
+      "timestamp": 1583485367018
+    },
+    {
+      "productName": "test product final",
+      "price": "50000",
+      "quantity": "3",
+      "datepicker": "2020-03-08T18:30:00.000Z",
+      "stock": true,
+      "id": 15,
+      "timestamp": 1583488740265,
+      "userId": 1
+    },
+    {
+      "productName": "Pen",
+      "price": "664",
+      "quantity": "4",
+      "datepicker": "2020-03-08T18:30:00.000Z",
+      "stock": true,
+      "id": 16,
+      "timestamp": 1583489251228
+    },
+    {
+      "productName": "test",
+      "price": "4",
+      "quantity": "2",
+      "datepicker": "2021-01-04T18:30:00.000Z",
+      "stock": true,
+      "id": 17,
+      "timestamp": 1609512037301,
+      "userId": 1
+    },
+    {
+      "productName": "sdsd",
+      "price": "32",
+      "quantity": "3",
+      "datepicker": "2021-01-12T18:30:00.000Z",
+      "stock": true,
+      "id": 18,
+      "timestamp": 1609512216763,
+      "userId": 1
+    },
+    {
+      "productName": "aaaaa",
+      "price": "23",
+      "quantity": "3",
+      "datepicker": "2020-12-31T18:30:00.000Z",
+      "stock": true,
+      "id": 19,
+      "timestamp": 1609512310824,
+      "userId": 1
+    },
+    {
+      "productName": "test",
+      "price": "23",
+      "quantity": "23",
+      "datepicker": "2021-01-03T18:30:00.000Z",
+      "stock": true,
+      "id": 20,
+      "timestamp": 1609652663977,
+      "userId": 1
+    }
+  ],
+  "headerLables": [
+    {
+      "Id": "Id",
+      "ProductName": "ProductName",
+      "price": "Price",
+      "Date": "Date",
+      "Stock": "Stock",
+      "Quantity": "Quantity"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Kashinath"
+    },
+    {
+      "id": 2,
+      "name": "Sam"
+    }
+  ],
+  "userlist": [
+    {
+      "id": 1,
+      "email": "dhiraj@gmail.com",
+      "firstName": "Dhiraj",
+      "lastName": "Raymond"
+    },
+    {
+      "id": 2,
+      "firstName": "kashinath",
+      "lastName": "chormale",
+      "email": "kc@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstName": "arya",
+      "lastName": "Roy",
+      "email": "abc@gmail.com"
+    },
+    {
+      "id": 4,
+      "firstName": "Abcd",
+      "lastName": "XYz",
+      "email": "xyz@gmail.com"
+    },
+    {
+      "id": 5,
+      "email": "pk@gmail.com",
+      "firstName": "Pradnya",
+      "lastName": "chormale"
+    }
+  ]
+}
