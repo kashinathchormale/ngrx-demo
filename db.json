@@ -1,33 +1,6 @@
 {
   "list": [
     {
-      "productName": "Coffee Mug",
-      "price": "330",
-      "quantity": "3",
-      "datepicker": "2021-03-01T18:30:00.000Z",
-      "stock": true,
-      "id": 1,
-      "timestamp": 1583735411378
-    },
-    {
-      "productName": "Car",
-      "price": "3000",
-      "quantity": "1",
-      "datepicker": "2021-03-01T18:30:00.000Z",
-      "stock": "",
-      "id": 3,
-      "timestamp": 1583478271256
-    },
-    {
-      "productName": "Table",
-      "price": "300",
-      "quantity": "2",
-      "datepicker": "2021-03-01T18:30:00.000Z",
-      "stock": false,
-      "id": 4,
-      "timestamp": 1583478223784
-    },
-    {
       "productName": "Bottle",
       "price": "700",
       "quantity": "2",
@@ -73,25 +46,6 @@
       "timestamp": 1583485085386
     },
     {
-      "productName": "Amit",
-      "price": "343",
-      "quantity": "4",
-      "datepicker": "2020-03-15T18:30:00.000Z",
-      "stock": "",
-      "id": 10,
-      "timestamp": 1583417809489,
-      "userId": 1
-    },
-    {
-      "productName": "Sudhir",
-      "price": "1",
-      "quantity": "2",
-      "datepicker": "2020-03-01T18:30:00.000Z",
-      "stock": true,
-      "id": 11,
-      "timestamp": 1583478156400
-    },
-    {
       "productName": "Ring",
       "price": "300",
       "quantity": "2",
@@ -130,43 +84,43 @@
       "timestamp": 1583489251228
     },
     {
-      "productName": "test",
-      "price": "4",
-      "quantity": "2",
-      "datepicker": "2021-01-04T18:30:00.000Z",
-      "stock": true,
+      "productName": "new product",
+      "price": "3",
+      "quantity": "4",
+      "datepicker": "2021-01-06T18:30:00.000Z",
+      "stock": false,
       "id": 17,
-      "timestamp": 1609512037301,
+      "timestamp": 1610109369629,
       "userId": 1
     },
     {
-      "productName": "sdsd",
-      "price": "32",
-      "quantity": "3",
-      "datepicker": "2021-01-12T18:30:00.000Z",
+      "productName": "sample",
+      "price": "344",
+      "quantity": "23",
+      "datepicker": "2021-01-18T18:30:00.000Z",
       "stock": true,
       "id": 18,
-      "timestamp": 1609512216763,
+      "timestamp": 1610109862256,
       "userId": 1
     },
     {
-      "productName": "aaaaa",
+      "productName": "sample product",
       "price": "23",
-      "quantity": "3",
-      "datepicker": "2020-12-31T18:30:00.000Z",
-      "stock": true,
+      "quantity": "32",
+      "datepicker": "2021-01-07T18:30:00.000Z",
+      "stock": "",
       "id": 19,
-      "timestamp": 1609512310824,
+      "timestamp": 1610111820451,
       "userId": 1
     },
     {
-      "productName": "test",
-      "price": "23",
-      "quantity": "23",
-      "datepicker": "2021-01-03T18:30:00.000Z",
+      "productName": "suraj",
+      "price": "12",
+      "quantity": "12",
+      "datepicker": "2021-01-11T18:30:00.000Z",
       "stock": true,
       "id": 20,
-      "timestamp": 1609652663977,
+      "timestamp": 1610367804843,
       "userId": 1
     }
   ],
@@ -182,14 +136,49 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "Kashinath"
+      "name": "Chetan",
+      "email": "cshreemal23@gmail.com",
+      "password": "123456",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Sam"
+      "name": "vishal",
+      "email": "vis@test.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "suraj",
+      "email": "suraj@test.com",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "name": "mahesh",
+      "email": "m@test.com",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "name": "aman",
+      "email": "a@test.com",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "name": "test",
+      "email": "ea@test.com",
+      "password": "123",
+      "id": 13
     }
   ],
+  "authenticatedUser": [],
   "userlist": [
     {
       "id": 1,

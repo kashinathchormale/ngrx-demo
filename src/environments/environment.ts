@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   server: {
     api: 'http://my-json-server.typicode.com/narendrasinghrathore/ngrxstrore-angular/'
-  }
+  },
+  apiURL: 'http://localhost:3000'
 };
 
 /*

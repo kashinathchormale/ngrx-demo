@@ -5,48 +5,48 @@
 <ng-template #addnewOnly><h4>Add Product</h4></ng-template>
 <ng-template #edit><h4>Product Edit</h4></ng-template>
 
-<div class="mat-elevation-z8">
+<div class="box-shadow">
 <form [formGroup]="crudForm" (ngSubmit)="onSubmit()"> 
 
-  <mat-form-field class="form-group">
-    <mat-label>ProductName</mat-label>
-    <input matInput placeholder="title" formControlName="productName" />
-    <mat-error *ngIf="f.productName.invalid">
-      <div *ngIf="f.productName.errors.required">
+  <div class="form-group">
+    <label>ProductName</label>
+    <input alt="title" formControlName="productName"  />
+    <div *ngIf="f.productName.touched && f.productName.errors">
+      <div *ngIf="f.productName.errors.required" class="error">
         You must enter product name
       </div>
-      <div *ngIf="f.productName.errors.pattern">Not a valid product name</div>
-    </mat-error>
-  </mat-form-field>
+      <div  class="error" *ngIf="f.productName.errors.pattern">Not a valid product name</div>
+    </div>
+  </div>
 
-  <mat-form-field class="form-group">
-    <mat-label>price</mat-label>
-    <input matInput placeholder="price" formControlName="price" />
-    <mat-error *ngIf="f.price.invalid">
-      <div *ngIf="f.price.errors.required">You must enter price</div>
-      <div *ngIf="f.price.errors.pattern">Not a valid price</div>
-    </mat-error>
-  </mat-form-field>
+  <div class="form-group">
+    <label>Price</label>
+    <input alt="price" formControlName="price" />
+    <div *ngIf="f.price.touched && f.price.errors">
+      <div *ngIf="f.price.errors.required" class="error">You must enter price</div>
+      <div *ngIf="f.price.errors.pattern" class="error">Not a valid price</div>
+    </div>
+  </div>
 
-  <mat-form-field class="form-group">
-    <mat-label>Quantity</mat-label>
-    <input matInput placeholder="quantity" formControlName="quantity" />
-    <mat-error *ngIf="f.quantity.invalid">
-      <div *ngIf="f.quantity.errors.required">You must enter product name</div>
-      <div *ngIf="f.quantity.errors.pattern">Quantity should be in number</div>
-      <div *ngIf="f.quantity.errors?.maxlength">
+  <div class="form-group">
+    <label>Quantity</label>
+    <input alt="quantity" formControlName="quantity" />
+    <div *ngIf="f.quantity.touched && f.quantity.errors">
+      <div *ngIf="f.quantity.errors.required" class="error">You must enter product name</div>
+      <div *ngIf="f.quantity.errors.pattern" class="error">Quantity should be in number</div>
+      <div *ngIf="f.quantity.errors?.maxlength" class="error">
         Quantity should be only two digit
       </div>
-    </mat-error>
-  </mat-form-field>
+    </div>
+  </div>
 
   <mat-form-field>
-    <mat-label>Choose a date</mat-label>
+    <label>Choose a date</label>
     <input matInput [matDatepicker]="picker" formControlName="datepicker">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
     <mat-error *ngIf="f.datepicker.invalid">
-      <div *ngIf="f.datepicker.errors.required">You must enter date</div>
+      <div *ngIf="f.datepicker.errors.required" class="error">You must enter date</div>
     </mat-error>
   </mat-form-field>
 
@@ -55,13 +55,13 @@
   <ng-container *ngIf="id | async; then crud; else addOnly"> </ng-container>
   <ng-template #addOnly>
     <div class="button-group">
-      <button type="submit" mat-raised-button matTooltip="Submit" color="primary" (click)="addItem()" [disabled]="!crudForm.valid">Create</button>
+      <button type="submit" alt="Submit" (click)="addItem()" [disabled]="!crudForm.valid">Create</button>
   </div>
   </ng-template>
   <ng-template #crud>
     <div class="button-group">
-      <button type="submit" mat-raised-button matTooltip="Delete Product" color="warn" (click)="deleteItem()"  [disabled]="!crudForm.valid"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon></button>
-      <button type="submit" mat-raised-button matTooltip="Edit Product" color="success" (click)="updateItem()"  [disabled]="!crudForm.valid"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">edit</mat-icon></button>
+      <button type="submit" alt="Delete Product" (click)="deleteItem()"  [disabled]="!crudForm.valid">delete</button>
+      <button type="submit" alt="Edit Product" (click)="updateItem()"  [disabled]="!crudForm.valid">edit</button>
     </div>   
   </ng-template>
 </form>

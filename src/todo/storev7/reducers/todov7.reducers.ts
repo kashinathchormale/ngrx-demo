@@ -26,6 +26,7 @@ export function reducer(
       };
     }
     case FromProductActions.LOAD_PRODUCTS_SUCCESS: {
+      console.log(action.payload)
       const list = action.payload;
       const productEntites = list.reduce(
         (en: { [id: number]: ITodoList }, todo: ITodoList) => {

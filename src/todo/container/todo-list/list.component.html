@@ -2,14 +2,14 @@
 <hr/>
 <div class="button-group">
   <h4>Product list from store</h4>
-  <button type="submit" [routerLink]="['/product/crud']" routerLinkActive="router-link-active" mat-raised-button>+ Create new product</button>
+  <button type="submit" class="primary-btn" [routerLink]="['/product/crud']" routerLinkActive="router-link-active">+ Create new product</button>
 </div>
 <hr/>
 <div class='product-page-wrapper'>
   <div *ngIf="listStore$ | async as list; else nodata">
     <div class="row">
       <div class="col-sm-12">
-        <table class="table table-bordered">
+        <!-- <table class="table table-bordered">
           <tr class="bg-secondary" *ngFor="let item of lableList">
             <th>{{item.Id}}</th>
             <th>{{item.ProductName}}</th>
@@ -28,7 +28,35 @@
             <td class="ProductUnit"><span *ngIf="item.stock == true">Yes</span> <span *ngIf="item.stock == false">No</span></td>
             <td class="ProductUnit">{{item.datepicker | date}}</td>
           </tr>
-        </table>
+        </table> -->
+
+        <!-- <div class="list" *ngFor="let item of list">
+          <div>{{item.id}}</div>
+            <div><a  [routerLink]="['/product/detail', item.id]"
+              routerLinkActive="router-link-active">{{item.productName}}</a></div>
+            <div>{{item.quantity}}</div>
+            <div>{{item.price | currency:"₹"}}</div>
+            <div><span *ngIf="item.stock == true">Yes</span> <span *ngIf="item.stock == false">No</span></div>
+            <div>{{item.datepicker | date}}</div>  
+        </div> -->
+
+        <div class="grid-container">
+          <div class="grid-item" *ngFor="let item of list" [routerLink]="['/product/detail', item.id]">
+            <div>Sku ID: {{item.id}}</div>
+            <div>Product Name: <a  [routerLink]="['/product/detail', item.id]"
+              routerLinkActive="router-link-active">{{item.productName}}</a></div>
+            <div>Quantity: {{item.quantity}}</div>
+            <div>Price {{item.price | currency:"₹"}}</div>
+            <div>Stock available: <span *ngIf="item.stock == true">Yes</span> <span *ngIf="item.stock == false">No</span></div>
+            <div>Manfacture Date: {{item.datepicker | date}}</div> 
+            <a *ngIf="userAuthenticated">edit</a>
+            <a *ngIf="userAuthenticated">delete</a>
+          </div>
+         
+          <!-- <button type="submit" alt="Edit product" [routerLink]="['/product/crud', product.id]" [disabled]="!crudForm.valid"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">edit</mat-icon> Edit product</button> -->
+        </div>
+
+
       </div>
     </div>
   </div>

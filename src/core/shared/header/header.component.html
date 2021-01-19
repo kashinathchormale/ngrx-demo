@@ -1,14 +1,23 @@
 <div class="header-wraper">
   <div class="topleft">
     <a [routerLink]="['/']" matTooltip="My Store">
-      <h2 i18n="@@appTitle">My Ngrx Store</h2>
+      <h2 i18n="@@appTitle">Ngrx Demo Store</h2>
     </a>
-    <div class="header-wraper">       
-      <button i18n="@@buttonHome" mat-button matTooltip="Home" [routerLink]="['./home']" routerLinkActive="router-link-active">Home</button>
-      <button i18n="@@buttonProducts" mat-button matTooltip="Products" [routerLink]="['./list']" routerLinkActive="router-link-active">Products</button>
+    <a>{{currentUser?.name}}</a>
+    <!-- <a *ngIf="userAuthenticated" (click)="logoutuser()">logout</a> -->
+    <div class="header-wraper"> 
+      <a i18n="@@buttonHome" alt="Home" [routerLink]="['./home']" routerLinkActive="router-link-active">Home</a>
+      <a i18n="@@buttonProducts" alt="Products" [routerLink]="['./list']" routerLinkActive="router-link-active">Products</a>
+      <a *ngIf="!userLogged" i18n="@@buttonProducts" alt="login" [routerLink]="['/product/account/login']" routerLinkActive="router-link-active">Login</a>
+      <a *ngIf="!userLogged" i18n="@@buttonProducts" alt="register" [routerLink]="['/product/account/register']" routerLinkActive="router-link-active">Register</a>
+      <a *ngIf="userLogged" i18n="@@buttonProducts" alt="register" (click)="logoutuser()">Logout</a>
       <!-- <a routerLink="/products/cart" class="button fancy-button warn"><i class="material-icons">shopping_cart</i>           
         <span class="badge badge-warning">{{cartvalueLength}}</span>        
        </a> -->
+       <select id="sel1" name="Country" (change)="toggleTheme($event.target.value)" class="rounded-inputs20 select-select col-md-3">
+        <option [value]="city">Dark</option>  
+        <option [value]="city">Light</option>      
+      </select>
     </div>    
   </div>
 </div>

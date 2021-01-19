@@ -7,3 +7,21 @@ th{
         flex-direction: row;
         justify-content: space-between;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    // background-color: #bfc7ce;
+    padding: 0px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-gap: 20px;
+  }
+.grid-item {
+    background-color: var(--product-box-background);
+    border: 1px solid #aaaaaa;
+    padding: 15px;
+    font-size: 14px;
+    // background-color: #ccc;
+    // text-align: center;
+    border-radius: 5px;
+  }

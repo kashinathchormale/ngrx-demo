@@ -6,4 +6,15 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./todo.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProductComponent {}
+export class ProductComponent {
+  //currentUser;
+  // localdata;
+  ngOnInit(){
+    // this.localdata = localStorage.getItem('user');
+
+  //  if(this.localdata){
+  //   this.currentUser = JSON.parse(this.localdata);
+  //   this.userAuthenticated = true;
+  // }
+  }
+}

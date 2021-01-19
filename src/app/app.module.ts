@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from '../core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { UserService } from '../todo/container/users/services/user.service';
 import { reducers, CustomSerializer, effects, metaReducers } from './storev7';
 import {
   StoreRouterConnectingModule,
@@ -28,7 +29,7 @@ import {
     StoreDevtoolsModule.instrument(),
     CoreModule.forRoot()
   ],
-  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }],
+  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

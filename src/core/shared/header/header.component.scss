@@ -1,5 +1,5 @@
 .header-wraper {
-  background-color: #1f93ce;
+  background-color: var(--navbar-color);
   color: #ffffff;
   padding: 10px;
   margin: 10px 0;
@@ -14,7 +14,7 @@
 }
 
 .header-wraper a, .btn {
-  color: #ffffff;
+  color: var(--text-color);
 }
 mat-grid-tile {
   background: lightblue;
@@ -31,4 +31,6 @@ a.button.fancy-button{
     top: -21px;
     right: -9px;
 }
-
+.header-wraper a{
+  margin-right: 15px;
+}

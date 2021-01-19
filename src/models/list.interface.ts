@@ -12,5 +12,5 @@ export interface ITodoList {
   // category: string;
   datepicker: string;
   stock: boolean;
-  [key: string]: any; // help to lookup via index
+  [key: string]: any; 
 }

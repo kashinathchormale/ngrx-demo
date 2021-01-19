@@ -9,6 +9,7 @@ export const storeName = 'shoppingCartStore';
 
 export interface ProductAppState {
   products: FromReducers.ProductState;
+  
 }
 
 export const reducers: ActionReducerMap<ProductAppState> = {

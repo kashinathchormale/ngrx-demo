@@ -114,8 +114,12 @@ export class CrudComponent implements OnInit {
   }
 
   deleteItem() {
-    const payload = { id: this.id.value, ...this.crudForm.value };
+    if (window.confirm("Do you really want to delete?")) {
+      //window.open("exit.html", "Thanks for Visiting!");
+      const payload = { id: this.id.value, ...this.crudForm.value };
     this.store.dispatch(new fromIndexStore.DeleteProduct(payload));
+    }
+    
   }
 
 

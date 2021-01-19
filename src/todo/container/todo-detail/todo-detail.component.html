@@ -3,13 +3,13 @@
 <hr />
 
 <ng-container *ngIf="pname | async as product"> 
-    <div class="mat-elevation-z8">
+    <div class="box-shadow">
         <p class="productId"> <label>Sku ID: </label> <span>{{product.id}}</span> </p>
         <p class="productName"> <label>Product Name: </label> <span>{{product.productName}}</span> </p>   
         <p class="productQuantity"> <label>Quantity: </label> <span>{{product.quantity}}</span> </p>
         <p class="productPrice"> <label>Price: </label> <span>{{product.price | currency:'INR'}}</span> </p>
         <p class="productPrice"> <label>Manfacture Date: </label> <span>{{product.timestamp | date}}</span> </p>
-        <button type="submit" mat-raised-button matTooltip="Edit product" color="primary" [routerLink]="['/product/crud', product.id]" [disabled]="!crudForm.valid"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">edit</mat-icon> Edit product</button>
+        <button type="submit" alt="Edit product" [routerLink]="['/product/crud', product.id]" [disabled]="!crudForm.valid"><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">edit</mat-icon> Edit product</button>
     </div>    
 </ng-container>
 

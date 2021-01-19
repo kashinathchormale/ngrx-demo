@@ -1,38 +1,19 @@
-import { createAction } from '@ngrx/store';
+// import { createAction } from '@ngrx/store';
 
-// export enum TodosActionsTypes {
-//   LoadTodos = '[TODO] Loading todos',
-//   LoadTodosSuccess = '[TODO] Loading todos success',
-//   LoadTodosFail = '[TODO] Loading todos fail'
+// export enum ProductsActionsTypes {
+//   LoadProducts = '[PRODUCT] Loading products',
+//   LoadProductsSuccess = '[PRODUCT] Loading products success',
+//   LoadProductsFail = '[PRODUCT] Loading products fail'
 // }
 
-// export const LoadTodo = createAction(
-//   TodosActionsTypes.LoadTodos
+// export const LoadProducts = createAction(
+//   ProductsActionsTypes.LoadProducts
 // );
 
-// export const LoadTodoSuccess = createAction(
-//   TodosActionsTypes.LoadTodosSuccess
+// export const LoadProductsSuccess = createAction(
+//   ProductsActionsTypes.LoadProductsSuccess
 // );
 
-// export const LoadTodoFail = createAction(
-//   TodosActionsTypes.LoadTodosFail
+// export const LoadProductsFail = createAction(
+//   ProductsActionsTypes.LoadProductsFail
 // );
-
-
-export enum ProductsActionsTypes {
-  LoadProducts = '[PRODUCT] Loading products',
-  LoadProductsSuccess = '[PRODUCT] Loading products success',
-  LoadProductsFail = '[PRODUCT] Loading products fail'
-}
-
-export const LoadProducts = createAction(
-  ProductsActionsTypes.LoadProducts
-);
-
-export const LoadProductsSuccess = createAction(
-  ProductsActionsTypes.LoadProductsSuccess
-);
-
-export const LoadProductsFail = createAction(
-  ProductsActionsTypes.LoadProductsFail
-);

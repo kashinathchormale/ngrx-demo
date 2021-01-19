@@ -4,3 +4,14 @@
 .button-group button{
     margin-right: 10px;
 }
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+.form-group label{
+    margin-right: 10px;
+    width: 100%;
+}

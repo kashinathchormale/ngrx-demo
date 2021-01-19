@@ -13,7 +13,7 @@ import { MaterialModule } from './core/material/material.module';
   declarations: [HeaderComponent, smartSearch,
     RatingComponent, 
     PageNotFoundComponent,
-    // ProfileFormComponent
+    // ProfileFormComponent 
     ],
   imports: [
     CommonModule,

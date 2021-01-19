@@ -38,6 +38,13 @@ import { SharedModule } from 'src/core/shared/shared.module';
               )
           },
           {
+            path: 'account',
+            loadChildren: () =>
+              import('./container/users/users.module').then(
+                user => user.UsersModule
+              )
+          },
+          {
             path: 'crud/:id',
             loadChildren: () =>
               import('./container/todo-list-crud/todo-list-crud.module').then(
